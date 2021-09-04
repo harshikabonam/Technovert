@@ -14,8 +14,8 @@ body{
 }
 .logo{
     background-color: black;
-    padding: 8px 13px;
-    width: 11vh;
+    padding: 8px 10px;
+    width: 5vh;
     border-bottom: 1px solid gray;
 }
 .logo img{
@@ -70,7 +70,7 @@ body{
     flex-direction: row;
     padding-left: 15px;
     align-items: center;
-    width: 52vw;
+    width: 58vw;
    
 }
 .notifications{
@@ -387,18 +387,38 @@ padding-top: 5%;
 @media only screen and  (min-device-width:1024px) and (max-device-width:1440px)  
 {
     .logo{
-        
+        padding: 8px 13px;
     width: 5vh;
     }
     .sideNavbar{
         height:90.5vh;
     }
 }
-/* @media only screen and  (min-device-width:1441px) and (max-device-width:1920px)  
+@media only screen and  (min-device-width:1441px) and (max-device-width:1920px)  
 {
     .card
 {
 
-    width:400px;
+    width:380px;
 }
-} */
+.addcard{
+    width:380px;
+}
+.underline{
+    border-bottom: 2px solid rgb(35, 98, 216);
+    width: 7%;
+}
+.sideNavbar{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 11vh;
+    height: 91.7vh ;
+}
+.navs{
+    width: 95.2vw;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(143, 143, 143);
+}
+}

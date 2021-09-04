@@ -2,28 +2,28 @@
 {
     margin: 0;
     padding:0;
-    /* overflow: hidden; */
 }
 body{
-    background-color: lightgray;
+    background-color: rgb(231, 231, 231);
 }
-.topnav{
+/* topnavbar */
+.topnavbar{
     display: flex;
     flex-direction: row;
     background-color: white;
 }
-.logo{
+.logoicon{
     background-color: black;
     padding: 8px 10px;
     width: 5vh;
     border-bottom: 1px solid gray;
 }
-.logo img{
+.logoicon img{
     width: 40px;
     height: 35px;
     align-items: center;
 }
-.search1{
+.searchorg{
     display: flex;
     flex-direction: row;
     padding-left: 15px;
@@ -31,7 +31,7 @@ body{
    align-items: center;
    border: 1px solid #E8E8E8;
 }
-.searchicon{
+.searchusericon{
     width: 20px;
     height:20px;
     
@@ -51,53 +51,56 @@ body{
 {
     border: none;
     font-size: 12px;
-    /* width: 350px; */
-
 }
 .input1:focus
 {
     outline: none;
 }
-.search-text{
+.searchuser-text{
     font-size: 10px;
     color: black;
     opacity: 30%;
     font-family: poppins;
     padding: 10px;
 }
-.search2{
+.searchreq{
     display: flex;
     flex-direction: row;
     padding-left: 15px;
     align-items: center;
-    width: 58vw;
+    width: 55vw;
    
 }
-.notifications{
+.secondsearch
+{
+    display: flex;
+     flex-direction: row;
+}
+.notificationsicon{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
 }
-.notifications .icon1{
+.notificationsicon .bellicon{
     width: 20px;
     height: 20px;
     margin: 10px;
 
 }
-.navbar-text1{
+.belltext{
     font-size: 12px;
     color: black;
     font-family: poppins;
     opacity: 50%;
 }
-.notifications .icon2{
+.notificationsicon .usericon{
     width: 25px;
     height: 25px;
     border-radius: 50%;
     margin-left: 25px;
 }
-.navbar-text2{
+.usertext{
     font-size: 12px;
     color: black;
     font-family: poppins;
@@ -113,11 +116,8 @@ body{
     display: inline-block;
     padding: 4px;
   }
-
-
-
-
-.sideNavbar{
+/* leftsidenav */
+.leftsideNavbar{
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -125,18 +125,18 @@ body{
     height: 90vh ;
     align-self: center;
 }
-.sideNavs{
+.navitem{
 margin-top: 20px;
 
 }
-.sideNavs .text{
+.navitem .text{
     color: white;
-    font-size: 8px;
+    font-size: 9px;
     font-family: poppins;
     opacity: 60%;
     text-align: center;
 }
-.sideNavs .img{
+.navitem .img{
     width: 8px;
     height: 8px;
 }
@@ -146,24 +146,17 @@ margin-top: 20px;
     border-radius: 50%;
     
 }
-.sideNav-icons{
+.navitemicons{
     text-align:center ;
 }
 .selectednav{
     background-color:#303030;
     padding: 10px;
 }
-.nav
+.leftsidenav
 {
     display: flex;
     flex-direction: row;
-}
-
-.text{
-    padding-left: 3%;
-    color: rgb(90, 90, 90);
-    font-size: 15px;
-    font-family: poppins;
 }
 .textactive
 {
@@ -172,20 +165,18 @@ margin-top: 20px;
     font-size: 15px;
     font-style: poppins;   
 }
-.modules {
-    justify-content: space-between 6px;
+/* topsecondnav */
+.topsecondnav{
     display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
-    
- }
- .navs{
+    flex-direction: column;
+}
+ .topnavs{
     width: 94.5vw;
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid rgb(143, 143, 143);
+    border-bottom: 1px solid rgb(204, 204, 204);
 }
-.normalNav{
+.topNavitems{
     color: black;
     font-size: 12px;
     font-weight: 300;
@@ -207,17 +198,21 @@ margin-top: 20px;
     border-bottom: 2px solid rgb(35, 98, 216);
     width: 8%;
 }
+/* middleelements */
+.modules {
+    justify-content: space-between 6px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    
+ }
 .middleelements
 {
     display: flex;
     flex-direction: row;
-    /* flex-flow:row wrap; */
 }
-.secondnav{
-    display: flex;
-    flex-direction: column;
-    /* flex-flow: wrap; */
-}
+
+/* leftpart */
 .box
 {
     padding:1%;
@@ -231,18 +226,17 @@ margin-top: 20px;
     font-size: 12px;
     line-height: 10px;
     width: 200px;
-    height: 30px;
+    height: 20px;
     padding: 0%;
     margin: 0%;
-    border: 1px solid rgb(163, 163, 163);
+    border: 1px solid rgb(200, 200, 200);
     border-bottom: none;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     padding:15px 0 0 20px;
     font-weight: 500px;
 }
-.blocks1 {
+.button1{
 display: flex;
-/* display: inline-block; */
 flex-direction: column;
 font-size: 10px;
 line-height: 10px;
@@ -250,49 +244,47 @@ width: 200px;
 height: 40px;
 padding: 0%;
 margin: 0%;
-border: 1px solid rgb(163, 163, 163);
+border: 1px solid rgb(200, 200, 200);
 background-color: rgb(200, 227, 238);
 border-bottom: None;
 padding:15px 0 0 20px;
 font-weight: 500px;
 
 }
-.blocks {
+.buttons {
 display: flex;
 flex-direction: column;
 font-size: 8px;
 width: 200px;
 height: 50px;
 padding:15px 0 0 20px;
-border: 1px solid rgb(163, 163, 163);
+border: 1px solid rgb(200, 200, 200);
 border-bottom: None;
 background-color: white;
 
 }
-.endblocks {
+.endbuttons {
     display: flex;
     flex-direction: column;
     font-size: 8px;
     width: 200px;
     height: 50px;
     padding:15px 0 0 20px;
-    border: 1px solid rgb(163, 163, 163);
+    border: 1px solid rgb(200, 200, 200);
     background-color: white;
     }
-.font
+.buttontext
 {
 font-weight: 500;
 }
-.folder{
+.foldernum{
 font-size: 12px;
 font-weight: 500;
 }
 
-
-/*  */
+/* rightpart */
 .rightcard{
     box-sizing: border-box;
-    /* margin:1rem 1rem 1rem .25em; */
     border: 1px solid white;
     background-color: white;
     width:100%;
@@ -303,6 +295,7 @@ font-weight: 500;
 {
     font-weight: 500;
    
+    color: rgb(51, 51, 51);
 }
 
 .subtext
@@ -322,7 +315,7 @@ font-weight: 500;
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    padding-top: 1%;
+    padding-top: 2%;
 }
 .card
 {
@@ -344,6 +337,8 @@ font-size: 13px;
 color:rgb(179, 179, 179);
 clear: left;
 padding-top: 5%;
+padding-left: 3%;
+font-family: poppins;
 }
 .heading1
 {
@@ -353,6 +348,7 @@ padding-top: 5%;
     float: left;
     padding-top: 5%;
     padding-left: 3%;
+    color: rgb(51, 51, 51);
 }
 
 .addcard
@@ -386,12 +382,12 @@ padding-top: 5%;
 
 @media only screen and  (min-device-width:1024px) and (max-device-width:1440px)  
 {
-    .logo{
+    .logoicon{
         padding: 8px 13px;
     width: 5vh;
     }
-    .sideNavbar{
-        height:90.5vh;
+    .leftsideNavbar{
+        height:90.2vh;
     }
 }
 @media only screen and  (min-device-width:1441px) and (max-device-width:1920px)  
@@ -408,14 +404,14 @@ padding-top: 5%;
     border-bottom: 2px solid rgb(35, 98, 216);
     width: 7%;
 }
-.sideNavbar{
+.leftsideNavbar{
     background-color: black;
     display: flex;
     flex-direction: column;
     width: 11vh;
     height: 91.7vh ;
 }
-.navs{
+.topnavs{
     width: 95.2vw;
     display: flex;
     flex-direction: row;
